@@ -13,6 +13,15 @@ background(#ffffff);
 // positions
 float cloudX = map(frameCount, 2, 25, 200, 0);
 float carX = map(frameCount, 2, 25, -200, 0);
+//boarders
+translate(0,0);
+stroke(#000000);
+strokeWeight(5);
+line(0,0,300,0);
+line(0,0,0,300);
+line(0,300,300,300);
+line(300,0,300,300);
+
 //sidewalk
 stroke(#ffffff);
 strokeWeight(4);
@@ -49,7 +58,7 @@ fill(#ffffff);
 rect(170,130,10, 5);
 resetMatrix();
 
-//clouds
+//clouds 1-3
 translate(cloudX,0);
 fill(#000000);
 ellipse(25, 25, 35, 30); 
